@@ -1779,6 +1779,30 @@ button, input, textarea {
   line-height: 1.5;
 }
 
+.cred-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.cred-bullets li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.cred-bullets li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
 /* --------------------------------------------------------------------------
    12. Contact Section & Working Form
    -------------------------------------------------------------------------- */
